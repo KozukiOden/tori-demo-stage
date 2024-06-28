@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Transparent Divs on Dark Navy Page</title>
+  <title>Transparent Div on Dark Navy Page</title>
   <style>
     body {
       background-color: #0a192f;
@@ -10,19 +10,17 @@
     }
     
     .transparent-div {
+      position: absolute;
+      top: 66%;
+      left: 0;
       width: 100%;
-      height: 10px;
+      height: 1px;
       background-color: transparent;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      margin-bottom: calc(20vh - 10px);
     }
   </style>
 </head>
 <body>
-  <div class="transparent-div"></div>
-  <div class="transparent-div"></div>
-  <div class="transparent-div"></div>
-  <div class="transparent-div"></div>
   <div class="transparent-div"></div>
 </body>
 </html>
