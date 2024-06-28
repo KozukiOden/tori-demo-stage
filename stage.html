@@ -1,24 +1,47 @@
+<html_code>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invisible Divs</title>
+    <title>Staggered Invisible Divs</title>
     <style>
-        .invisible-div {
-            position: absolute;
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
             width: 100%;
-            height: 1px; /* small height to keep it almost invisible */
+            height: 100vh;
+            position: relative;
+        }
+        .invisible-div {
+            width: 100%;
+            height: 10px;
+            position: absolute;
             background-color: transparent;
         }
-        .div1 { top: 25%; }
-        .div2 { top: 50%; }
-        .div3 { top: 75%; }
+        .div1 { top: 20%; left: 0; }
+        .div2 { top: 40%; left: 25%; }
+        .div3 { top: 60%; left: 50%; }
+        .div4 { top: 80%; left: 75%; }
+        .div5 { top: 100%; left: 100%; transform: translateY(-100%); }
     </style>
 </head>
 <body>
-    <div class="invisible-div div1"></div>
-    <div class="invisible-div div2"></div>
-    <div class="invisible-div div3"></div>
+    <div class="container">
+        <div class="invisible-div div1"></div>
+        <div class="invisible-div div2"></div>
+        <div class="invisible-div div3"></div>
+        <div class="invisible-div div4"></div>
+        <div class="invisible-div div5"></div>
+    </div>
 </body>
 </html>
+</html_code>
