@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Transparent Div on Dark Navy Page</title>
+  <title>Divs on Dark Navy Page</title>
   <style>
     body {
       background-color: #0a192f;
@@ -9,18 +9,29 @@
       padding: 0;
     }
     
-    .transparent-div {
+    .top-div {
       position: absolute;
-      top: 33%;
+      top: 0;
       left: 0;
       width: 100%;
-      height: 10px;
+      height: 33%;
       background-color: black;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .full-height-div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: transparent;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
-  <div class="transparent-div"></div>
+  <div class="top-div"></div>
+  <div class="full-height-div"></div>
 </body>
 </html>
