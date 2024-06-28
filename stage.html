@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Divs</title>
+    <style>
+        .invisible-div {
+            position: absolute;
+            width: 100%;
+            height: 1px; /* small height to keep it almost invisible */
+            background-color: transparent;
+        }
+        .div1 { top: 25%; }
+        .div2 { top: 50%; }
+        .div3 { top: 75%; }
+    </style>
+</head>
+<body>
+    <div class="invisible-div div1"></div>
+    <div class="invisible-div div2"></div>
+    <div class="invisible-div div3"></div>
+</body>
+</html>
