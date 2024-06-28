@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Divs on Dark Navy Page</title>
+  <title>Nested Divs with Contrasting Navy Shades</title>
   <style>
     body {
-      background-color: #0a192f;
       margin: 0;
       padding: 0;
     }
     
-    .top-div {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .outer-div {
       width: 100%;
-      height: 33%;
-      background-color: black;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      height: 100vh;
+      background-color: #0a192f;
+      border: 2px solid black;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
-    .full-height-div {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .inner-div {
       width: 100%;
-      height: 100%;
-      background-color: transparent;
-      pointer-events: none;
+      height: 50%;
+      background-color: #1c3a6e;
+      border: 2px solid black;
+      box-sizing: border-box;
     }
   </style>
 </head>
 <body>
-<div class="full-height-div"><div class="top-div"></div>
-</div>
+  <div class="outer-div">
+    <div class="inner-div"></div>
+  </div>
 </body>
 </html>
