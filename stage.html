@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Div in Top Half of Screen</title>
+  <title>Div at Top of Screen</title>
   <style>
     body {
       margin: 0;
@@ -12,9 +12,7 @@
       width: 100%;
       height: 100vh;
       background-color: #0a192f;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      position: relative;
     }
     
     .inner-div {
@@ -23,6 +21,9 @@
       background-color: #1c3a6e;
       border: 2px solid transparent;
       box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
